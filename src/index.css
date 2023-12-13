@@ -1,0 +1,91 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.movielist_parent{
+  margin: auto;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 250px);
+  grid-template-rows: auto;
+  gap: 2rem;
+}
+
+.card_parent{
+  /* border: 1px solid grey; */
+  margin: auto;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  .movie_banner{
+    border-radius: 0.5rem 0.5rem 0 0 ;
+    margin: auto;
+    width: 200px;
+    height: 270px;
+    object-fit: fill;
+  }
+
+}
+
+.rating_parent{
+  display: flex;
+  gap: 1rem;
+  padding: 0.3rem;
+}
+
+.rating_parent > div:first-child{
+  color: grey;
+}
+
+.rating_parent > div:nth-child(2){
+  color: rgb(95, 126, 184)
+}
+
+.movie_name{
+  color: rgb(61, 60, 60);
+  padding: 0.3rem 0.5rem;
+}
+
+.movie_msg{
+  padding: 0.3rem 0.5rem;
+  color: grey;
+}
+
+.date{
+  padding: 0.4rem 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  background-color: rgb(207, 205, 205);
+  margin: 1rem;
+  border-radius: 0.5rem;
+}
+
+
+
+/* search box */
+
+
+.search_parent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 3rem;
+}
+
+.search_btn{
+  padding: 0.3rem 0.7rem;
+}
+
+input{
+  padding: 0.4rem 0.7rem;
+  border-radius: 0.5rem;
+}
+
+.search_parent {
+  font-size: 1.5rem;
+}
